@@ -1,0 +1,146 @@
+@font-face {
+  font-family: poppinsRegular;
+  src: url(assets/font/Poppins-Regular.ttf);
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+body::after {
+	content: '';
+	display: block;
+	height: 100px; /* Set same as footer's height */
+  }
+
+
+.thinbar{
+	width:100%;
+	height: 1.25em;
+	background-color:#1B1C1D;
+}
+
+.thinbar-text{
+	color: #FBFBFC;
+	margin: 0px 25px 0px 0px;
+	text-align: right;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+}
+
+.navbar-logo{
+	width:6em;
+	margin: 0px 0px 0px 20px;
+	padding-top:18px;
+}
+
+.navbar-buttongroup{
+	margin: 0.5rem 0;
+	margin-right: 0.75vw;
+	padding: 0.15vh 1vw;
+	min-height:2vh;
+	border-radius: 8px;
+	background-color: white;
+	align-items: center;
+	box-shadow: 0px 4px 7px 2px #DBDBDB;
+	display: flex;
+	min-width:22vw;
+	justify-content: center;
+	gap: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.navbar-button,.navbar-searchbutton{
+	font-size: 16px;
+	margin: 4px;
+	padding: 0;
+	height: auto;
+	background-color: white;
+	border-radius: 5px;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	display: inline-flex;
+	align-items: center;
+	font-family: poppinsRegular;
+	text-decoration: none;
+}
+
+.navbar-button-link{
+	text-decoration: none;
+	color:#1B1C1D
+}
+.navbar-button-link:active{
+	color:#DBDBDB
+}
+
+.searchbar{
+	display: inline-flex;
+	height: 95%;
+	margin:1px -13px 0px -13px;
+	width: 300px;
+	background-color: #f2f2f2;
+	border-radius: 7px;
+}
+
+.navbar-button:hover{
+	margin:0px 5px;
+	font-size: 20px;
+}
+
+.divbody{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.footer{
+	background-color: #e3dcda;
+	width:100%;
+	position: absolute;
+  	bottom: 0;
+	height: 100px;
+}
+
+.footer-links{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-linksimg{
+	margin: 1rem 0.5rem 0 0.5rem;
+}
+
+.footer-copyrighttext{
+	color: #1B1C1E;
+	text-align: center;
+	font-family: poppinsRegular;
+	font-size: 12px;
+}
+
+.tempimg{
+	margin: 1.5rem 0 0 3rem;
+	max-width: 300px;
+	
+}
+
+.constructionheader{
+	font-family: poppinsRegular;
+	margin: 4rem 0 0 2rem;
+	padding-right: 1vw;
+	color: 1B1C1E;
+}
+.constructiontext{
+	font-family: poppinsRegular;
+	margin: 1rem 0 0 2rem;
+	padding-right: 1vw;
+	color: #1B1C1E;
+}
