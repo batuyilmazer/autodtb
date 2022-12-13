@@ -1,2 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
+* {
+    border: 1px solid black;
+}
