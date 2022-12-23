@@ -1,4 +1,3 @@
 # autodtb
 ## AutoDTB.com Web Site Source Codes
-
-Development Branch
+# AutoDTB is a database project to see and compare the specifications of your favorite cars!
