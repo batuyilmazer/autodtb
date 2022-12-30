@@ -4,12 +4,15 @@
   uses: SamKirkland/FTP-Deploy-Action@3.1.2
   with:
     # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-    ftp-server: 
+    ftp-server: ftp.autodtb.com
     # FTP account username
-    ftp-username: 
+    ftp-username: ftp-gh@autodtb.com
     # FTP account password
-    ftp-password: 
+    ftp-password: ${{ secrets.ftp_password }}
     # The local folder to copy, defaults to root project folder
     local-dir: # optional, default is ./
     # Passes through options into git-ftp
     git-ftp-args: # optional
+    
+    
+
