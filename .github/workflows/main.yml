@@ -1,7 +1,8 @@
 on: push
 name: Deploy to FTP on push
-branches:
-  - main
+branches: 
+  - 'main'
+  - '!dev'
 jobs:
   web-deploy:
     name: Deploy
