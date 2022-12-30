@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.autodtb.com
-        username: ftp-gh
+        username: ftp-gh@autodtb.com
         password: ${{ secrets.ftp_password }}
