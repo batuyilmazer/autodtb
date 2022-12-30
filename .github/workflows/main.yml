@@ -1,21 +1,17 @@
-on: 
-  push:
-  branches:
-    - main
-    name: Deploy to FTP on push
-    jobs:
-      web-deploy:
-        name: Deploy
-        runs-on: ubuntu-latest
-        if: github.ref == 'refs/heads/main' # run this job only for the main branch
-        steps:
-        - name: Get latest code
-          uses: actions/checkout@v2
-        
-        - name: Sync files
-          uses: SamKirkland/FTP-Deploy-Action@4.3.3
-          if: github.ref == 'refs/heads/main' # run this job only for the main branch
-          with:
-            server: ftp.autodtb.com
-            username: ftp-gh@autodtb.com
-            password: ${{ secrets.ftp_password }}
+on: push
+  name: Deploy to FTP on push
+  jobs:
+    web-deploy:
+      name: Deploy
+      runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/main' # run this job only for the main branch
+      steps:
+      - name: Get latest code
+        uses: actions/checkout@v2
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ftp.autodtb.com
+          username: ftp-gh@autodtb.com
+          password: ${{ secrets.ftp_password }}
