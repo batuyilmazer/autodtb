@@ -159,3 +159,7 @@ body::after {
 	width: 70px;
 	height: 70px;
 }
+
+.inter-font{
+	font-family: inter;
+}
