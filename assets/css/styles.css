@@ -155,7 +155,11 @@ body::after {
 
 .navbar-logo{
 	padding: 0px;
-	margin: -10px 0px -20px -10px;
-	width: 70px;
-	height: 70px;
+	margin-left: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+.inter-font{
+	font-family: inter;
 }
