@@ -120,6 +120,7 @@ body::after {
 	text-align: center;
 	font-size: 12px;
 	font-family: inter;
+	margin-top: 20px;
 }
 
 .tempimg{
@@ -150,4 +151,11 @@ body::after {
 
 .thin{
 	font-weight: 200;
+}
+
+.navbar-logo{
+	padding: 0px;
+	margin: -10px 0px -20px -10px;
+	width: 70px;
+	height: 70px;
 }

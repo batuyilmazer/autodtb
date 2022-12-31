@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="AutoDTB Main Page"/>
 	
-	<title>AutoDTB Main Page</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+	<title>AutoDTB | Ana Sayfa</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=inter">
 	<link rel="stylesheet" href="assets/css/styles.css" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<div class="thinbar">
-		<a class="no-deco" href="../index.html"><p class="thinbar-text">English</p></a>
+		<a class="no-deco" href="../index.html"><p class="thinbar-text thin">English</p></a>
 		<p class="thinbar-text"> | </p>
 		<a class="no-deco" href="#"><p class="thinbar-text bold">Türkçe</p></a>
 	</div>
 
-		<div class="navbar">
-			<a class="logo-button" href="index.html">
-				<img class="navbar-logo" src="assets/image/logo.png">
-			</a>
-				<div class="navbar-buttongroup">
-					<a class="navbar-button-link" href=""><p  class="navbar-button">Haberler</p></a>
-					<a class="navbar-button-link" href=""><p class="navbar-button">Veritabanı</p></a>
-					<a class="navbar-button-link" href=""><p class="navbar-button">Karşılaştırma</p></a>
-					<a class="navbar-button-link" href=""><p class="navbar-button">Araç Önerisi</p></a>
-				</div>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img class="navbar-logo" src="assets/image/logo.png" ></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Haberler</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Veritabanı</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Karşılaştırma</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Öneri</a>
+			</li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+		  </form>
 		</div>
+	  </nav>
 	
 
 	<div class="divbody">
 		<img class="tempimg" src="assets/image/underconstruction.png">
 		<div>
-			<h1 class="constructionheader bold">Yapım Çalışmasındayız!</h1>
-		<p class="constructiontext normal">İlerlememizi görmek için daha sonra tekrar uğrayın!</p>
+			<h1 class="constructionheader bold">Yapım Aşamasındayız!</h1>
+		  <p class="constructiontext normal">İlerlememizi görmek için lütfen tekrar uğrayın!</p>
 		</div>
 	</div>
 
@@ -45,7 +62,7 @@
 			<a href="https://twitter.com/AutoDatabase"><img class="footer-linksimg" src="assets/image/twitter.png" width="25"></a>
 			<a href="mailto:contact@autodtb.com"><img class="footer-linksimg" src="assets/image/email.png" width="25"></a>
 		</div>
-		<p class="footer-copyrighttext">Tüm hakları saklıdır - AutoDTB.com</p>
+		<p class="footer-copyrighttext thin">Tüm hakları saklıdır - AutoDTB.com</p>
 	</footer>
 </body>
 </html>
