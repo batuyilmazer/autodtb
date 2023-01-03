@@ -14,11 +14,34 @@ body::after {
 	height: 100px; /* Set same as footer's height */
   }
 
+  
+.bold{
+	font-weight: 600;
+}
 
-  .thinbar{
+.normal{
+	font-weight: 400;
+}
+
+.thin{
+	font-weight: 200;
+}
+
+.inter{
+	font-family: inter;
+}
+
+.dark{
+	color: #1B1C1E;
+}
+
+.bg-dark{
+	background-color: #1B1C1E;
+}
+
+.thinbar{
 	width:100%;
 	height: 1.25em;
-	background-color:#1B1C1D;
 	display: flex;
 	align-items: center;
 	justify-content: right;
@@ -34,61 +57,6 @@ body::after {
 
 .no-deco{
 	text-decoration: none;
-}
-
-.navbar{
-	display: flex;
-	align-items: center;
-	justify-content: start;
-}
-
-.navbar-logo{
-	width:6em;
-	margin: 0px 0px 0px 20px;
-	padding-top:18px;
-}
-
-.navbar-buttongroup{
-	margin: 0.5rem 0;
-	margin-right: 0.75vw;
-	padding: 0.15vh 1vw;
-	min-height:2vh;
-	border-radius: 8px;
-	background-color: white;
-	align-items: center;
-	box-shadow: 0px 4px 7px 2px #DBDBDB;
-	display: flex;
-	min-width:22vw;
-	justify-content: center;
-	gap: 10px;
-	flex-direction: row;
-}
-.navbar-button{
-	font-size: 16px;
-	margin: 4px;
-	padding: 0px;
-	height: auto;
-	background-color: white;
-	border-radius: 5px;
-	border: none;
-	text-decoration: none;
-	transition-duration: 0.4s;
-	display: inline-flex;
-	align-items: center;
-	text-decoration: none;
-	font-family: inter;
-}
-
-.navbar-button-link{
-	text-decoration: none;
-	color:#1B1C1D
-}
-.navbar-button-link:active{
-	color:#DBDBDB
-}
-
-.navbar-button:hover{
-	color:#85909e;
 }
 
 .divbody{
@@ -131,26 +99,11 @@ body::after {
 .constructionheader{
 	margin: 4rem 0 0 2rem;
 	padding-right: 1vw;
-	color: #1B1C1E;
 	font-family: inter;
 }
 .constructiontext{
 	margin: 1rem 0 0 2rem;
 	padding-right: 1vw;
-	color: #1B1C1E;
-	font-family: inter;
-}
-
-.bold{
-	font-weight: 600;
-}
-
-.normal{
-	font-weight: 400;
-}
-
-.thin{
-	font-weight: 200;
 }
 
 .navbar-logo{
@@ -158,8 +111,4 @@ body::after {
 	margin-left: 0px;
 	width: 50px;
 	height: 50px;
-}
-
-.inter-font{
-	font-family: inter;
 }
