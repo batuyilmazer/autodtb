@@ -67,12 +67,12 @@ body::after {
 }
 
 .tempimg{
-	margin: 1.5rem 0 0 3rem;
+	margin: 1rem 0 0 3rem;
 	max-width: 300px;
 }
 
 .constructiontext{
-	margin: 0 0 2rem 2rem;
+	margin: 0 0 0 2rem;
 	padding-right: 1vw;
 }
 
