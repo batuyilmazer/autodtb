@@ -27,6 +27,10 @@ body::after {
 	font-weight: 200;
 }
 
+.no-deco{
+	text-decoration: none;
+}
+
 .inter{
 	font-family: inter;
 }
@@ -55,15 +59,21 @@ body::after {
 	font-weight: 100;
 }
 
-.no-deco{
-	text-decoration: none;
+.navbar-logo{
+	padding: 0px;
+	margin-left: 0px;
+	width: 50px;
+	height: 50px;
 }
 
-.divbody{
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 50px;
+.tempimg{
+	margin: 1.5rem 0 0 3rem;
+	max-width: 300px;
+}
+
+.constructiontext{
+	margin: 0 0 2rem 2rem;
+	padding-right: 1vw;
 }
 
 .footer{
@@ -87,28 +97,5 @@ body::after {
 	color: #1B1C1E;
 	text-align: center;
 	font-size: 12px;
-	font-family: inter;
 	margin-top: 20px;
-}
-
-.tempimg{
-	margin: 1.5rem 0 0 3rem;
-	max-width: 300px;
-}
-
-.constructionheader{
-	margin: 4rem 0 0 2rem;
-	padding-right: 1vw;
-	font-family: inter;
-}
-.constructiontext{
-	margin: 1rem 0 0 2rem;
-	padding-right: 1vw;
-}
-
-.navbar-logo{
-	padding: 0px;
-	margin-left: 0px;
-	width: 50px;
-	height: 50px;
 }
