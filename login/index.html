@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <meta name="description" content="AutoDTB Login Page"/>
+
+        <title>AutoDTB | Login</title>
+	    <link rel="stylesheet" href="../assets/css/styles.css" />
+	    <link rel="stylesheet" href="login.css" />
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/image/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="../assets/image/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="../assets/image/favicon-16x16.png">
+
+	    <script src="https://kit.fontawesome.com/3c69619c9f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=inter">
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../"><img class="navbar-logo" src="../assets/image/web-logo.png" alt="AutoDTB"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link inter" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link inter" href="#">Database</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link inter" href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link inter" href="#">Car Recommender</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 inter" type="search" placeholder="Search">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <a class="nav-link ml-2 no-deco text-dark" href="login/"><p class="inter align-content-center my-auto">Login</p></a>
+            </div>
+        </nav>
+
+        <div class="login-card bg-light align-self-center mt-4">
+            <h1 class="text-dark inter bold mb-1">Login</h1>
+            <p class="text-dark inter thin mt-0 ml-2">For Admin Panel</p>
+            <form class="form mt-4">
+                <div class="form-group">
+                    <label class="text-dark inter normal" for="input-email">Email Address</label>
+                    <input class="form-control inter" id="input-email" type="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="text-dark inter normal" for="input-password">Password</label>
+                    <input class="form-control inter" id="input-password" type="password">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" id="input-remember" type="checkbox">
+                    <label class="text-dark inter" for="input-remember">Remember Me</label>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-dark">Login</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

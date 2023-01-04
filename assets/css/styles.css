@@ -36,14 +36,6 @@ body::after {
 	font-family: inter;
 }
 
-.dark{
-	color: #1B1C1E;
-}
-
-.bg-dark{
-	background-color: #1B1C1E;
-}
-
 .thinbar{
 	width:100%;
 	height: 1.25em;
