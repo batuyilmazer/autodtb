@@ -5,8 +5,9 @@ body{
 	padding: 0px;
 	min-height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
-
 
 body::after {
 	content: '';
@@ -72,8 +73,9 @@ body::after {
 }
 
 .constructiontext{
-	margin: 0 0 0 2rem;
+	margin: 0 0 0 2resm;
 	padding-right: 1vw;
+	text-align: center;
 }
 
 .footer{
@@ -98,4 +100,8 @@ body::after {
 	text-align: center;
 	font-size: 12px;
 	margin-top: 20px;
+}
+.divbody{
+	align-items: center;
+	justify-content: center;
 }
