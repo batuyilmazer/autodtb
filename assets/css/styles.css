@@ -36,38 +36,10 @@ body::after {
 	font-family: inter;
 }
 
-.thinbar{
-	width:100%;
-	height: 1.25em;
+.align-center{
 	display: flex;
 	align-items: center;
-	justify-content: right;
-}
-
-.thinbar-text{
-	color: #FBFBFC;
-	margin: 0px 5px 0px 0px;
-	text-align: right;
-	font-size: 12px;
-	font-weight: 100;
-}
-
-.navbar-logo{
-	padding: 0px;
-	margin-left: 0px;
-	width: 50px;
-	height: 50px;
-}
-
-.tempimg{
-	margin: 0 -50px 0 0;
-	max-width: 300px;
-}
-
-.constructiontext{
-	margin: 0 0 0 2resm;
-	padding-right: 1vw;
-	text-align: center;
+	justify-content: center;
 }
 
 .footer{
@@ -76,96 +48,4 @@ body::after {
 	position: absolute;
   	bottom: 0;
 	height: 100px;
-}
-
-.footer-links{
-	display: flex;
-	justify-content: center;
-}
-
-.footer-linksimg{
-	margin: 1rem 0.5rem 0 0.5rem;
-}
-
-.footer-copyrighttext{
-	color: #1B1C1E;
-	text-align: center;
-	font-size: 12px;
-	margin-top: 20px;
-}
-
-.divbody{
-	align-items: center;
-	justify-content: center;
-}
-
-.lang-menu{
-	width: 100px;
-	position: relative;
-	margin-left: 15px;
-
-}
-
-.lang-menu .selected-lang{
-	cursor: pointer;
-	display: flex;
-	justify-content:left;
-}
-
-.lang-menu .selected-lang::before{
-	content: '';
-	display: inline-block;
-	width: 32px;
-	height: 24px;
-	margin-right: 6px;
-	background-image: url(https://flagcdn.com/32x24/gb.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.lang-menu ul{
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 20px;
-	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-	padding: 10px 12px;
-	right: 0px;
-}
-
-.lang-menu ul li{
-	list-style: none;
-	text-align: left;
-	display: flex;
-	justify-content: space-between;
-	}
-
-.lang-menu ul li a{
-	text-decoration: none;
-	width: 110px;
-	padding: 5px 10px;
-	display: block;
-}
-
-.lang menu ul li a:hover{
-	background-color: #F2F2F2;
-}
-
-.lang-menu ul li a:before{
-	content: '';
-	display: inline-block;
-	width: 32px;
-	height: 24px;
-	vertical-align: middle;
-	background-size:contain;
-	margin-right: 6px;
-	background-repeat: no-repeat;
-}
-
-.tr:before{
-	background-image: url(https://flagcdn.com/32x24/tr.png);
-}
-
-.lang-menu:hover ul{
-	display: block;
 }
