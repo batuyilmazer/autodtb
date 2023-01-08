@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+.animate__animated.animate__slideInRight {
+	--animate-duration: 0.2s;
+}
+
+.dropdown-menu {
+	min-width: 60px !important;
+}
+
 body{
 	margin: 0px;
 	padding: 0px;
