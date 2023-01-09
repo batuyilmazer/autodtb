@@ -1,4 +1,4 @@
-- name: Discord Webhook Notify
+- name: discord_notify.yml
   uses: rjstone/discord-webhook-notify@v1.0.4
   with:
     severity: info
