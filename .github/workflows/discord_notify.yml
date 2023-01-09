@@ -1,12 +1,6 @@
-- name: discord_notify.yml
-  uses: rjstone/discord-webhook-notify@v1.0.4
-  with:
-    severity: info
-    username: AutoDTB
-    color: '#ff00aa'
-    avatarUrl: https://autodtb.com/assets/image/web-logo.png
-    description: Denizlerde savasacagiz
-    details: 'Sahillerde Savasacagiz.'
-    footer: bayirlarda savasacagiz.
-    text: sokaklar ve caddelerde savasacagiz.
-    webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+- name: Discord Commits
+        uses: Sniddl/discord-commits@v1.5
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          template: 'avatar-with-link'
+          include-extras: true
