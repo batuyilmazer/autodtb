@@ -5,9 +5,21 @@ jobs:
     name: notify
     runs-on: ubuntu-latest
     steps:
-    - name: Discord Commits
-      uses: Sniddl/discord-commits@v1.5
+    - name: Test Info
+      uses: rjstone/discord-webhook-notify@v1
       with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        template: 'avatar-with-link'
-        include-extras: true
+        severity: info
+        details: Test succeeded.
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Test Warn
+      uses: rjstone/discord-webhook-notify@v1
+      with:
+        severity: warn
+        details: Test warning.
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+    - name: Test Error
+      uses: rjstone/discord-webhook-notify@v1
+      with:
+        severity: error
+        details: Test error.
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
