@@ -57,3 +57,10 @@ body::after {
   	bottom: 0;
 	height: 100px;
 }
+
+#constructionimg{
+	height: auto; 
+    width: 100%; 
+    max-width: 300px; 
+    max-height: 300px;
+}
