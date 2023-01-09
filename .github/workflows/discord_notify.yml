@@ -1,12 +1,12 @@
 - name: Discord Webhook Notify
   uses: rjstone/discord-webhook-notify@v1.0.4
-    with:
-        severity: info
-        username: AutoDTB
-        color: '#ff00aa'
-        avatarUrl: https://autodtb.com/assets/image/web-logo.png
-        description: Denizlerde savasacagiz
-        details: 'Sahillerde Savasacagiz.'
-        footer: bayirlarda savasacagiz.
-        text: sokaklar ve caddelerde savasacagiz.
-        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+  with:
+    severity: info
+    username: AutoDTB
+    color: '#ff00aa'
+    avatarUrl: https://autodtb.com/assets/image/web-logo.png
+    description: Denizlerde savasacagiz
+    details: 'Sahillerde Savasacagiz.'
+    footer: bayirlarda savasacagiz.
+    text: sokaklar ve caddelerde savasacagiz.
+    webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
