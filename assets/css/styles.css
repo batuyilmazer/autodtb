@@ -44,11 +44,6 @@ body::after {
 	font-family: inter;
 }
 
-.align-center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 .footer{
 	background-color: #f8f9fa;
@@ -56,4 +51,23 @@ body::after {
 	position: absolute;
   	bottom: 0;
 	height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+	.align-center-md{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		align-self: center;
+	}
+}
+
+
+.align-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
 }
