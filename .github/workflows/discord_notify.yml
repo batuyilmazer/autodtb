@@ -1,0 +1,16 @@
+on: push
+name: Discord Commits
+jobs:
+  discord_notify:
+    name: notify
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test Info
+      uses: rjstone/discord-webhook-notify@v1
+      with:
+        severity: info
+        username: AutoDTB
+        color: '#ff00aa'
+        avatarUrl: https://www.autodtb.com/assets/image/web-logo.png
+        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+        
