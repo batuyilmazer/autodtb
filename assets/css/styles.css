@@ -50,18 +50,10 @@ body::after {
 	text-decoration: none;
 }
 
-<<<<<<< HEAD
-.align-center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-=======
 .inter{
 	font-family: inter;
 }
 
->>>>>>> dbe43e4d1dc4254cbd8291e9f7b4e191183b3c34
 
 .footer{
 	background-color: #f8f9fa;
@@ -71,13 +63,6 @@ body::after {
 	height: 100px;
 }
 
-<<<<<<< HEAD
-/* Login Page */
-
-.login-card{
-    padding: 4vh 2.5vw;
-    border-radius: 12px;
-=======
 @media screen and (min-width: 768px) {
 	.align-center-md{
 		display: flex;
@@ -95,5 +80,4 @@ body::after {
 	justify-content: center;
 	align-content: center;
 	align-self: center;
->>>>>>> dbe43e4d1dc4254cbd8291e9f7b4e191183b3c34
 }
