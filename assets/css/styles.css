@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+.click-through{
+	pointer-events: none;
+}
+
 .animate__animated.animate__slideInRight {
 	--animate-duration: 0.2s;
 }
