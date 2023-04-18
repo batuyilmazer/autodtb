@@ -66,7 +66,7 @@ const brands = [
 ]
 listBrandItem(brands);
 
-
+//TODO: Find a better solution to display "Not Found" error text.
 var hasCreatedNotFoundLi;
 //Search Button onclick
 function brandSearchFunc(){
