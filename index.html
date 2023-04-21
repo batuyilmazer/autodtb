@@ -29,68 +29,69 @@
 		<div class="col">
 			<div class="row">
 				<div id="headingContainer">
-					<h1 id="headingh1">AutoDTB</h1>
-					<h3 id="headingh3">is under construction</h3>
-					<p id="headingp">
+					<h1 id="headingh1" class="poppins">AutoDTB</h1>
+					<h3 id="headingh3" class="poppins">is under construction</h3>
+					<p id="headingp" class="poppins">
 						AutoDTB is an <span>artificial intelligence</span> powered <span>automobile recommendation</span> system for people who want to pick 
 						right choice. <span>Massive database</span> and <span>automobile news</span>, AutoDTB is #1 place for car-people! 
 					</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col" id="newsletterContainer">
+				<!-- Subscribe to newsletter-->
+				<div id="newsletterContainer" class="col">
 					<form>
-						<h2 id="newsletterHeader"><span class="color-red">Notify</span> me on news</h2>
-						<div id="contactEmailInputContainer" class="inputGroup">
-							<label for="contactEmail" class="inputLabel"></label>
-							<input type="email" id="contactEmail" placeholder="johndoe@example.com">
+						<h2 id="newsletterHeader" class="poppins"><span class="color-red">Notify</span> me on news</h2>
+						<div id="contactEmailInputContainer" class="inputGroup poppins">
+							<label for="contactEmail" class="poppins"></label>
+							<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="poppins">
 						</div>
 						<div id="agreementContainer">
-							<label for="agreementCheckbox" id="agreementCheckboxLabel">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
+							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
 							<input type="checkbox" id="agreementCheckbox">
 						</div>
 						<div class="row" id="newsletterButtonContainer">
 							<div class="col" id="subscribeButtonContainer">
-								<button id="subscribeButton"><span id="subscribeButtonText">Subscribe</span></button>
+								<button id="subscribeButton"><span id="subscribeButtonText" class="poppins">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<button id="manageSubscriptionButton"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
+								<button id="manageSubscriptionButton" class="poppins"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
 				</div>
+				<!-- Contact -->
 				<div id="contactContainer" class="col">
 					<form>
-						<h2 id="contactHeader">Contact us</h2>
-						<p id="contactParagraph">Alternatively, you can always contact us on Instagram & Twitter!</p>
+						<h2 id="contactHeader" class="poppins">Contact us</h2>
+						<p id="contactParagraph" class="poppins">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
 							<div id="contactEmailInputContainer" class="col">
-								<label for="contactEmailInput" class="inputLabel" id="contactEmailInputLabel">Email Address</label>
-								<input type="email" id="contactEmailInput">
+								<label for="contactEmailInput" class="poppins" id="contactEmailInputLabel">Email Address</label>
+								<input type="email" id="contactEmailInput" class="poppins">
 							</div>
 							<div id="contactReferrerContainer" class="col">
-								<label for="reasonSelect" id="reasonSelectLabel">Reason</label>
+								<label for="reasonSelect" id="reasonSelectLabel" class="poppins">Reason</label>
+								<!-- TODO: Add poppins font to options & select -->
 								<select name="Reason" id="reasonSelect">
-									<optgroup>
 										<option value="message">Message</option>
-									</optgroup>
-									<optgroup>
 										<option value="bugReport">Bug Report</option>
 										<option value="advice">Advice</option>
-									</optgroup>
-									<optgroup>
 										<option value="cooperation">Business & Cooperation</option>
-									</optgroup>
 								</select>
 							</div>
 						</div>
 						<div id="messageInputContainer">
-							<label for="messageInput" id="messageInputLabel">Message</label>
-							<textarea name="messageInput" id="messageInput" cols="30" rows="5"></textarea>
+							<label for="messageInput" id="messageInputLabel" class="poppins">Message</label>
+							<textarea name="messageInput" id="messageInput" cols="30" rows="4" class="poppins"></textarea>
 						</div>
-						<div id="contactButtonContainer" class="buttonGroup">
-							<button id="contactSubmitButton">Send</button>
-							<button id="contactAttachButton">Add Attachment<span class="">(optional)</span></button>
+						<div id="contactButtonContainer" class="row">
+							<div id="contactSubmitButtonContainer" class="col">
+								<button id="contactSubmitButton" class="poppins">Send</button>
+							</div>
+							<div id="contactAttachButtonContainer" class="col">
+							<button id="contactAttachButton" class="poppins">Add Attachment <span class="">(optional)</span></button>
+							</div>
 						</div>
 					</form>
 				</div>
