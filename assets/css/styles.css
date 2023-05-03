@@ -4,6 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+@layer components{
+	.input-primary{
+		@apply text-9xl;
+	}
+}
+
+:root {
+	--red: #CF4A4A;
+	--background-primary: #F0ECE7;
+  }
+
 .click-through{
 	pointer-events: none;
 }
@@ -51,4 +62,20 @@
 
 .no-deco{
 	text-decoration: none;
+}
+
+.color-red{
+	color: var(--red);
+}
+
+/* Green Filled Button */
+.button_primary{
+	background-color: #85E16E;
+	border: 0px;
+	border-radius: 8px;
+}
+
+/* Blue Outlined Button */
+.button_secondary{
+
 }
