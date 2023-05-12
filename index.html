@@ -47,8 +47,15 @@
 					<form>
 						<h2 id="newsletterHeader" class="poppins semibold text-5xl"><span class="color-red">Notify</span> me on news</h2>
 						<div id="contactEmailInputContainer" class="poppins regular">
-							<label for="contactEmail" class="poppins light text-md">Email Address</label>
-							<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="input-primary poppins text-md">
+							<div class="input_primary input_img">
+								<label for="contactEmail" class="poppins light text-md">Email Address</label>
+								<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="input-primary poppins text-md">
+								<!-- 
+									TODO: İkonun input'un içinde gözükmesi için absolute position ile ayarlama yapılmalı 
+									Başka bir yol da uygulayabilirsin farketmez.
+								-->
+								<img src="assets/image/email-icon.svg" alt="icon">
+							</div>
 						</div>
 						<div id="agreementContainer">
 							<input type="checkbox" id="agreementCheckbox">
@@ -59,7 +66,7 @@
 								<button id="subscribeButton" class="poppins button_primary"><span id="subscribeButtonText" class="poppins decoration-white">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<button id="manageSubscriptionButton" class="poppins"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
+								<button id="manageSubscriptionButton" class="poppins button_secondary"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
@@ -67,7 +74,7 @@
 				<!-- Contact -->
 				<div id="contactContainer" class="col">
 					<form>
-						<h2 id="contactHeader" class="poppins">Contact us</h2>
+						<h2 id="contactHeader" class="poppins semibold text-5xl">Contact us</h2>
 						<p id="contactParagraph" class="poppins">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
 							<div id="contactEmailInputContainer" class="col">
