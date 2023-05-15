@@ -34,7 +34,7 @@
 					<h1 id="headingh1" class="poppins bold ">AutoDTB</h1>
 					<h3 id="headingh3" class="poppins regular text-6xl">is under construction</h3>
 					<p id="headingp" class="poppins regular text-xl">
-						AutoDTB is an <span class="semibold">artificial intelligence</span> powered <span class="semibold">automobile recommendation</span class="semibold"> system for people who want to pick 
+						AutoDTB is an <span class="semibold">artificial intelligence</span> powered <span class="semibold">automobile recommendation</span class="semibold"> system for people who want to pick the 
 						right choice. <span class="semibold">Massive database</span> and <span class="semibold">automobile news</span>, AutoDTB is #1 place for car-people! 
 					</p>
 				</div>
@@ -44,10 +44,16 @@
 				<div id="newsletterContainer" class="col">
 					<form>
 						<h2 id="newsletterHeader" class="poppins semibold"><span class="color-red">Notify</span> me on news</h2>
-						<div id="contactEmailInputContainer" class="poppins regular">
-							<label for="contactEmail" class="poppins light">Email Address</label>
-							<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="poppins">
-						</div>
+						<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+							<div class="sm:col-span-4">
+							  <label for="username" class="poppins regular">Email Address*</label>
+							  <div class="mt-2">
+								<div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+								  <input type="text" name="email" id="email" autocomplete="email" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 poppins regular placeholder:poppins extra-light focus:ring-0 sm:text-sm sm:leading-6" placeholder="johndoe@example.com">
+								</div>
+							  </div>
+							</div>
+								
 						<div id="agreementContainer">
 							<input type="checkbox" id="agreementCheckbox">
 							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
