@@ -4,6 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+@layer components{
+	.input-primary{
+		@apply text-9xl;
+	}
+}
+
+:root {
+	--red: #CF4A4A;
+	--green: #85E16E;
+	--dark_green: #79cb65;
+	--blue: #5DA2F4;
+	--background-primary: #F0ECE7;
+  }
+
 .click-through{
 	pointer-events: none;
 }
@@ -52,3 +66,95 @@
 .no-deco{
 	text-decoration: none;
 }
+
+.color-red{
+	color: var(--red);
+}
+
+/* Green Filled Button */
+.button_primary{
+	font-family: poppins, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: var(--green);
+	padding: 10px 40px;
+	border: solid var(--green) 0px;
+	box-shadow: none;
+	border-radius: 17px;
+	transition : 200ms;
+	transform: translateY(0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	text-transform: lowercase;
+}
+
+.button_primary:hover{
+	transition : 200ms;
+	padding: 8px 38px;
+	transform : translateY(-0px);
+	background-color: #fff;
+	color: var(--green);
+	border: solid 2px var(--green);
+}
+
+/* Blue Outlined Button */
+.button_secondary{
+	font-family: poppins, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--blue);
+	padding: 10px 40px;
+	border: solid var(--blue) 0px;
+	box-shadow: none;
+	border-radius: 17px;
+	transition : 200ms;
+	transform: translateY(0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	text-transform: lowercase;
+	border: solid 2px var(--blue);
+}
+
+.button_secondary:hover{
+	transition : 200ms;
+	padding: 10px 40px;
+	transform : translateY(-0px);
+	background-color: var(--blue);
+	color: #fff;
+}
+
+.input_primary {
+	position: relative;
+}
+  
+.input_primary[type="email"] {
+	background-color: #F1F1F1;
+	border: none;
+	border-radius: 8px;
+	box-shadow: none;
+	font-family: Poppins;
+	font-size: 16px;
+	padding: 10px 40px 10px 10px;
+	outline: none;
+	width: 100%;
+}
+  
+.input_primary.input_img + img {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+}
+  
+.input_primary.input_img + .input_img {
+	width: 16px;
+	height: 16px;
+}
+  

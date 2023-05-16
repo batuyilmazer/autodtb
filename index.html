@@ -1,3 +1,5 @@
+<!-- TODO: Fix decoration-{color} on tailwind-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +33,7 @@
 		<div class="col">
 			<div class="row">
 				<div id="headingContainer">
-					<h1 id="headingh1" class="poppins bold ">AutoDTB</h1>
+					<h1 id="headingh1" class="poppins bold text-9xl">AutoDTB</h1>
 					<h3 id="headingh3" class="poppins regular text-6xl">is under construction</h3>
 					<p id="headingp" class="poppins regular text-xl">
 						AutoDTB is an <span class="semibold">artificial intelligence</span> powered <span class="semibold">automobile recommendation</span class="semibold"> system for people who want to pick the 
@@ -43,6 +45,7 @@
 				<!-- Subscribe to newsletter-->
 				<div id="newsletterContainer" class="col">
 					<form>
+<<<<<<< HEAD
 						<h2 id="newsletterHeader" class="poppins semibold"><span class="color-red">Notify</span> me on news</h2>
 						<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 							<div class="sm:col-span-4">
@@ -54,16 +57,30 @@
 							  </div>
 							</div>
 								
+=======
+						<h2 id="newsletterHeader" class="poppins semibold text-5xl"><span class="color-red">Notify</span> me on news</h2>
+						<div id="contactEmailInputContainer" class="poppins regular">
+							<div class="input_primary input_img">
+								<label for="contactEmail" class="poppins light text-md">Email Address</label>
+								<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="input-primary poppins text-md">
+								<!-- 
+									TODO: İkonun input'un içinde gözükmesi için absolute position ile ayarlama yapılmalı 
+									Başka bir yol da uygulayabilirsin farketmez.
+								-->
+								<img src="assets/image/email-icon.svg" alt="icon">
+							</div>
+						</div>
+>>>>>>> 289c63e4c21f0da1851b5d162ba8f914a58f17c7
 						<div id="agreementContainer">
 							<input type="checkbox" id="agreementCheckbox">
-							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
+							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins text-xs">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
 						</div>
 						<div class="row" id="newsletterButtonContainer">
 							<div class="col" id="subscribeButtonContainer">
-								<button id="subscribeButton"><span id="subscribeButtonText" class="poppins">Subscribe</span></button>
+								<button id="subscribeButton" class="poppins button_primary"><span id="subscribeButtonText" class="poppins decoration-white">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<button id="manageSubscriptionButton" class="poppins"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
+								<button id="manageSubscriptionButton" class="poppins button_secondary"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
@@ -71,7 +88,7 @@
 				<!-- Contact -->
 				<div id="contactContainer" class="col">
 					<form>
-						<h2 id="contactHeader" class="poppins">Contact us</h2>
+						<h2 id="contactHeader" class="poppins semibold text-5xl">Contact us</h2>
 						<p id="contactParagraph" class="poppins">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
 							<div id="contactEmailInputContainer" class="col">
