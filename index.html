@@ -31,46 +31,41 @@
 <body>
 	<div class="row">
 		<div class="col">
-			<div class="row">
+			<div class="row text-justify mt-[72px] ml-[74px]" style="width: 593px; height: 353px;">
 				<div id="headingContainer">
-					<h1 id="headingh1" class="poppins bold text-9xl">AutoDTB</h1>
-					<h3 id="headingh3" class="poppins regular text-6xl">is under construction</h3>
-					<p id="headingp" class="poppins regular text-xl">
-						AutoDTB is an <span class="semibold">artificial intelligence</span> powered <span class="semibold">automobile recommendation</span class="semibold"> system for people who want to pick the 
+					<h1 id="headingh1" class="poppins bold text-9xl/[120px]">AutoDTB</h1>
+					<h3 id="headingh3" class="poppins regular text-[54px] ">is under construction</h3>
+					<p id="headingp" class="poppins regular text-xl/[30px]">
+						AutoDTB is an <span class="semibold color-green">artificial intelligence powered</span> <span class="semibold">automobile recommendation</span class="semibold"> system for people who want to pick the 
 						right choice. <span class="semibold">Massive database</span> and <span class="semibold">automobile news</span>, AutoDTB is #1 place for car-people! 
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<!-- Subscribe to newsletter-->
-				<div id="newsletterContainer" class="col">
+				<div id="newsletterContainer" class="col flex ml-[83px] mt-[40px]"
 					<form>
-<<<<<<< HEAD
-						<h2 id="newsletterHeader" class="poppins semibold"><span class="color-red">Notify</span> me on news</h2>
-						<div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+						<h2 id="newsletterHeader" class="poppins semibold text-5xl" style="width: 240; height: 88;"><span class="color-red">Notify me</span> <p>on news</p></h2>
+						<div class="mt-10">
 							<div class="sm:col-span-4">
-							  <label for="username" class="poppins regular">Email Address*</label>
+							  <label for="email" class="poppins regular">Email Address*</label>
 							  <div class="mt-2">
 								<div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
 								  <input type="text" name="email" id="email" autocomplete="email" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 poppins regular placeholder:poppins extra-light focus:ring-0 sm:text-sm sm:leading-6" placeholder="johndoe@example.com">
 								</div>
 							  </div>
 							</div>
-								
-=======
-						<h2 id="newsletterHeader" class="poppins semibold text-5xl"><span class="color-red">Notify</span> me on news</h2>
-						<div id="contactEmailInputContainer" class="poppins regular">
-							<div class="input_primary input_img">
-								<label for="contactEmail" class="poppins light text-md">Email Address</label>
-								<input type="email" id="contactEmail" placeholder="johndoe@example.com" class="input-primary poppins text-md">
-								<!-- 
-									TODO: İkonun input'un içinde gözükmesi için absolute position ile ayarlama yapılmalı 
-									Başka bir yol da uygulayabilirsin farketmez.
-								-->
-								<img src="assets/image/email-icon.svg" alt="icon">
+							<div class="sm:col-span-4">
+								<div class="col mt-4">
+									<p id="findout" class="poppins regular">How did you find out about us?</p>
+									<select class="py-3  pr-9 block  shadow-sm border-black-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-gray-400 poppins regular">
+										<option selected>Pick an option</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									  </select>
+								</div>
 							</div>
-						</div>
->>>>>>> 289c63e4c21f0da1851b5d162ba8f914a58f17c7
 						<div id="agreementContainer">
 							<input type="checkbox" id="agreementCheckbox">
 							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins text-xs">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
@@ -80,7 +75,7 @@
 								<button id="subscribeButton" class="poppins button_primary"><span id="subscribeButtonText" class="poppins decoration-white">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<button id="manageSubscriptionButton" class="poppins button_secondary"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
+								<butt	on id="manageSubscriptionButton" class="poppins button_secondary"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
@@ -122,11 +117,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="col" id="headingImageContainer">
-			<img id="headingImage" src="assets/image/construction.png" alt="Image couldn't be loaded" width="400px">
-		</div>
 	</div>
-
+	<div class="col flex -ml-20 align-middle justify-end
+	" id="headingImageContainer">
+		<img id="headingImage" src="assets/image/insaat.png" alt="Image couldn't be loaded" style="height: 619px; width: 546px;">
+	</div>
 	<!-- Bootstrap 5.3 JSDelivr Import Script-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<!-- DMCA Copyrights-->

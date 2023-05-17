@@ -71,6 +71,10 @@
 	color: var(--red);
 }
 
+.color-green{
+	color: #31A474;
+}
+
 /* Green Filled Button */
 .button_primary{
 	font-family: poppins, sans-serif;
@@ -157,4 +161,7 @@
 	width: 16px;
 	height: 16px;
 }
-  
+
+.html, .body{
+	height: 100%;
+}
