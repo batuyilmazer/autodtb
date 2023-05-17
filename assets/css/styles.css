@@ -16,7 +16,7 @@
 	--dark_green: #79cb65;
 	--blue: #5DA2F4;
 	--background-primary: #F0ECE7;
-  }
+}
 
 .click-through{
 	pointer-events: none;
@@ -164,4 +164,19 @@
 
 .html, .body{
 	height: 100%;
+}
+
+.inputIcon{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+.nonDraggable{
+	pointer-events: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
