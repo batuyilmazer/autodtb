@@ -45,10 +45,10 @@
 			</div>
 			<div class="row">
 				<!-- Subscribe to newsletter-->
-				<div id="newsletterContainer" class="col flex ml-[83px] mt-[40px]"
-					<form id="subscribeForm">
-						<h2 id="newsletterHeader" class="poppins semibold text-5xl" style="width: 240; height: 88;"><span class="color-red">Notify me</span> <p>on news</p></h2>
-						<div class="mt-10">
+				<div id="newsletterContainer" class="flex ml-[83px] mt-[40px]">
+					<form id="subscribeForm"style="width: 240; height: 312px;">
+						<h2 id="newsletterHeader" class="poppins semibold text-5xl justify-start" ><span class="color-red">Notify me</span> <p>on news</p></h2>
+						<div class="col mt-10">
 							<div class="sm:col-span-4">
 							  <label for="email" class="poppins regular">Email Address*</label>
 							  <div class="mt-2">
@@ -75,27 +75,30 @@
 						</div>
 						<div class="row" id="newsletterButtonContainer">
 							<div class="col" id="subscribeButtonContainer">
-								<button id="subscribeButton" class="poppins button_primary"><span id="subscribeButtonText" class="poppins decoration-white">Subscribe</span></button>
+								<button id="subscribeButton" class="poppins button_primary" style="height: 30px; width: 117px;"><span id="subscribeButtonText" class="poppins decoration-white text-xs">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<butt	on id="manageSubscriptionButton" class="poppins button_secondary"><span id="manageSubscriptionButtonText">Manage Subscription</span></button>
+								<butt	on id="manageSubscriptionButton" class="poppins button_secondary" style="height: 30px; width: 87px;"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
 				</div>
+
 				<!-- Contact -->
-				<div id="contactContainer" class="col">
+				<div id="contactContainer" class="col text-justify ml-14" style="height: 308px; width: 279px;">
 					<form>
-						<h2 id="contactHeader" class="poppins semibold text-5xl">Contact us</h2>
-						<p id="contactParagraph" class="poppins">Alternatively, you can always contact us on Instagram & Twitter!</p>
+						<h2 id="contactHeader" class="poppins semibold text-[50px]">Contact us</h2>
+						<p id="contactParagraph" class="poppins font-light mt-3 mb-4">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
-							<div id="contactEmailInputContainer" class="col">
-								<label for="contactEmailInput" class="poppins" id="contactEmailInputLabel">Email Address</label>
-								<input type="email" id="contactEmailInput" placeholder="johndoe@example.com" class="poppins">
-							</div>
-							<div id="contactReferrerContainer" class="col">
+							<div class="sm:col-span-4">
+								<label for="email" class="poppins regular">Email Address*</label>
+								<div class="mt-2">
+								  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+									<input type="text" name="email" id="email" autocomplete="email" class="textInput poppins regular placeholder:poppins extra-light focus:ring-0 sm:text-sm sm:leading-6 block flex-1 border-0 bg-transparent py-1.5 pl-1" placeholder="johndoe@example.com">
+								  </div>
+								</div>	
+							<div id="contactReferrerContainer" class="col poppins regular">
 								<label for="reasonSelect" id="reasonSelectLabel" class="poppins">Reason</label>
-								<!-- TODO: Add poppins font to options & select -->
 								<select name="Reason" id="reasonSelect">
 										<option value="message">Message</option>
 										<option value="bugReport">Bug Report</option>
@@ -106,7 +109,7 @@
 						</div>
 						<div id="messageInputContainer">
 							<label for="messageInput" id="messageInputLabel" class="poppins">Message</label>
-							<textarea name="messageInput" id="messageInput" cols="20" rows="4" class="poppins"></textarea>
+							<textarea name="messageInput" id="messageInput" cols="20" rows="4" class="poppins" style="height: 30; width: 100px;"></textarea>
 						</div>
 						<div id="contactButtonContainer" class="row">
 							<div id="contactSubmitButtonContainer" class="col">
@@ -121,8 +124,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col flex -ml-20 align-middle justify-end
-	" id="headingImageContainer">
+	<div class="col flex -ml-20 align-middle justify-end float-right" id="headingImageContainer">
 		<img id="headingImage" src="assets/image/insaat.png" alt="Image couldn't be loaded" style="height: 619px; width: 546px;">
 	</div>
 	<!-- Bootstrap 5.3 JSDelivr Import Script-->
@@ -131,3 +133,6 @@
 	<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
 </body>
 </html>
+
+
+<!--TODO: fix the width of the main row -->

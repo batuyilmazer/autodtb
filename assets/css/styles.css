@@ -82,7 +82,6 @@
 	font-size: 18px;
 	color: #ffffff;
 	background-color: var(--green);
-	padding: 10px 40px;
 	border: solid var(--green) 0px;
 	box-shadow: none;
 	border-radius: 17px;
@@ -91,6 +90,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content:center;
 	cursor: pointer;
 	text-transform: lowercase;
 }
@@ -119,6 +119,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content:center;
 	cursor: pointer;
 	text-transform: lowercase;
 	border: solid 2px var(--blue);
