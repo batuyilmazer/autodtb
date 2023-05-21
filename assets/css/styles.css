@@ -163,9 +163,13 @@
 	height: 16px;
 }
 
-.html, .body{
-	height: 100%;
-}
+html, body {
+	height: 100vh;
+  }
+  
+  body {
+	margin: 0;  
+  }
 
 .inputIcon{
 	width: 40px;

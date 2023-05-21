@@ -31,9 +31,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="row">
+	<div class="flex -ml-20 justify-end float-right h-[619px] w-[546px]" id="headingImageContainer">
+		<img id="headingImage" src="assets/image/insaat.png" alt="Image couldn't be loaded">
+	</div>
+	<div class="row w-[1000px]">
 		<div class="col">
-			<div class="row text-justify mt-[72px] ml-[74px]" style="width: 593px; height: 353px;">
+			<div class="row text-justify mt-[72px] ml-[74px] h-[353px] w-[593px]">
 				<div id="headingContainer">
 					<h1 id="headingh1" class="poppins bold text-9xl/[120px]">AutoDTB</h1>
 					<h3 id="headingh3" class="poppins regular text-[54px] ">is under construction</h3>
@@ -45,9 +48,9 @@
 			</div>
 			<div class="row">
 				<!-- Subscribe to newsletter-->
-				<div id="newsletterContainer" class="flex ml-[83px] mt-[40px]">
-					<form id="subscribeForm"style="width: 240; height: 312px;">
-						<h2 id="newsletterHeader" class="poppins semibold text-5xl justify-start" ><span class="color-red">Notify me</span> <p>on news</p></h2>
+				<div id="newsletterContainer" class="flex ml-[83px] mt-[40px] w-[280px] h-[312px]">
+					<form id="subscribeForm">
+						<h2 id="newsletterHeader" class="poppins semibold text-5xl justify-start w-[240px]" ><span class="color-red">Notify me</span> <p>on news</p></h2>
 						<div class="col mt-10">
 							<div class="sm:col-span-4">
 							  <label for="email" class="poppins regular">Email Address*</label>
@@ -75,18 +78,18 @@
 						</div>
 						<div class="row" id="newsletterButtonContainer">
 							<div class="col" id="subscribeButtonContainer">
-								<button id="subscribeButton" class="poppins button_primary" style="height: 30px; width: 117px;"><span id="subscribeButtonText" class="poppins decoration-white text-xs">Subscribe</span></button>
+								<button id="subscribeButton" class="poppins button_primary h-[30px] w-[117px]"><span id="subscribeButtonText" class="poppins decoration-white text-xs">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<butt	on id="manageSubscriptionButton" class="poppins button_secondary" style="height: 30px; width: 87px;"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs">Manage Subscription</span></button>
+								<butt	on id="manageSubscriptionButton" class="poppins button_secondary h-[30px] w-[87px]"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
 				</div>
 
 				<!-- Contact -->
-				<div id="contactContainer" class="col text-justify ml-14" style="height: 308px; width: 279px;">
-					<form>
+				<div id="contactContainer" class="col text-justify ml-14 w-[279px] h-[308px]">
+					<form class="w-[279px] h-[308px]">
 						<h2 id="contactHeader" class="poppins semibold text-[50px]">Contact us</h2>
 						<p id="contactParagraph" class="poppins font-light mt-3 mb-4">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
@@ -108,8 +111,8 @@
 							</div>
 						</div>
 						<div id="messageInputContainer">
-							<label for="messageInput" id="messageInputLabel" class="poppins">Message</label>
-							<textarea name="messageInput" id="messageInput" cols="20" rows="4" class="poppins" style="height: 30; width: 100px;"></textarea>
+							<label for="messageInput" id="messageInputLabel" class="poppins w-[100px] h-[30px]">Message</label>
+							<textarea name="messageInput" id="messageInput" cols="20" rows="4" class="poppins"></textarea>
 						</div>
 						<div id="contactButtonContainer" class="row">
 							<div id="contactSubmitButtonContainer" class="col">
@@ -124,9 +127,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col flex -ml-20 align-middle justify-end float-right" id="headingImageContainer">
-		<img id="headingImage" src="assets/image/insaat.png" alt="Image couldn't be loaded" style="height: 619px; width: 546px;">
-	</div>
+	
 	<!-- Bootstrap 5.3 JSDelivr Import Script-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<!-- DMCA Copyrights-->
@@ -134,5 +135,3 @@
 </body>
 </html>
 
-
-<!--TODO: fix the width of the main row -->
