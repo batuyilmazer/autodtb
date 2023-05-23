@@ -52,36 +52,37 @@
 					<form id="subscribeForm">
 						<h2 id="newsletterHeader" class="poppins semibold text-[60px] justify-start w-[380px]" ><span class="color-red">Notify me</span> <p>on news</p></h2>
 						<div class="col mt-6">
-							<div class="sm:col-span-4">
-							  <label for="email" class="poppins regular">Email Address*</label>
-							  <div class="mt-2">
-								<div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-								  <input type="text" name="email" id="email" autocomplete="email" class="textInput poppins regular placeholder:poppins extra-light focus:ring-0 sm:text-sm sm:leading-6 block flex-1 border-0 bg-transparent py-1.5 pl-1" placeholder="johndoe@example.com">
-								  <img class="inputIcon nonDraggable" src="assets/image/email.png">
-								</div>
-							  </div>
+							<div class="sm:col-span-4"> 
+								<label for="email" class="poppins regular">Email Address*</label>
+								<div class="relative mt-2"> 
+									<input type="text" name="email" id="email" autocomplete="email" 
+									class="bg-[#D9D9D9]/20 py-3 h-[30px] pr-9 block w-full pl-1    rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 poppins regular text-black text-sm" 
+									placeholder="johndoe@example.com"> 
+								</div> 
 							</div>
 							<div class="sm:col-span-4">
-								<div class="col mt-4">
+								<div class="col mt-3">
 									<p id="findout" class="poppins regular">How did you find out about us?</p>
-									<select class="py-3 pr-9 block shadow-sm text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-gray-400 poppins regular w-full border border-gray-400 rounded-md">
+									<select class="bg-[#D9D9D9]/20 py-3 pr-9 block shadow-sm text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-gray-400 poppins regular w-full    rounded-md">
 										<option selected>Pick an option</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
+										<option>Through a friend</option>
+										<option>Social Media</option>
+										<option>Search Engine</option>
+										<option>Third-Party Review</option>
+										<option>Other</option>
 									  </select>
 								</div>
 							</div>
 						<div id="agreementContainer">
 							<input type="checkbox" id="agreementCheckbox">
-							<label for="agreementCheckbox" id="agreementCheckboxLabel" class="poppins text-xs">I agree to receive the newsletter and know that I can easily unsubscribe at any time.</label>
+							<label for="agreementCheckbox" class="poppins text-xs mt-7">I agree to receive the newsletter and know that I can easily </label> <label for="agreementCheckbox" class="poppins text-xs" >unsubscribe at any time.*</label>
 						</div>
-						<div class="row" id="newsletterButtonContainer">
+						<div class="row mt-3" id="newsletterButtonContainer">
 							<div class="col" id="subscribeButtonContainer">
-								<button id="subscribeButton" class="poppins button_primary h-[30px] w-[117px]"><span id="subscribeButtonText" class="poppins decoration-white text-xs">Subscribe</span></button>
+								<button id="subscribeButton" class="poppins button_primary h-[55px] w-[195px]"><span id="subscribeButtonText" class="poppins decoration-white text-sm">Subscribe</span></button>
 							</div>
 							<div class="col" id="manageSubscriptionButtonContainer">
-								<butt	on id="manageSubscriptionButton" class="poppins button_secondary h-[30px] w-[87px]"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs">Manage Subscription</span></button>
+								<button id="manageSubscriptionButton" class="poppins button_secondary h-[55px] w-[145px]"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs text-center">Manage Subscription</span></button>
 							</div>
 						</div>
 					</form>
@@ -93,33 +94,40 @@
 						<h2 id="contactHeader" class="poppins semibold text-[60px]">Contact us</h2>
 						<p id="contactParagraph" class="poppins font-light mt-3 mb-4 text-xl">Alternatively, you can always contact us on Instagram & Twitter!</p>
 						<div class="row">
-							<div class="sm:col-span-4">
+							<div class="sm:col-span-4"> 
 								<label for="email" class="poppins regular">Email Address*</label>
-								<div class="mt-2">
-								  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-									<input type="text" name="email" id="email" autocomplete="email" class="textInput poppins regular placeholder:poppins extra-light focus:ring-0 sm:text-sm sm:leading-6 block flex-1 border-0 bg-transparent py-1.5 pl-1" placeholder="johndoe@example.com">
-								  </div>
-								</div>	
-							<div id="contactReferrerContainer" class="col poppins regular">
-								<label for="reasonSelect" id="reasonSelectLabel" class="poppins">Reason</label>
-								<select name="Reason" id="reasonSelect">
+								<div class="relative mt-2"> 
+									<input type="text" name="email" id="email" autocomplete="email" 
+									class="bg-[#D9D9D9]/20 py-3 h-[30px] pr-9 block w-full pl-1 rounded-md shadow-sm poppins regular text-black text-sm" 
+									placeholder="johndoe@example.com"> 
+								</div> 
+							</div>
+						
+							<div id="contactReferrerContainer" class="sm:col-span-4">
+								<div class="col mt-3">
+									<label for="reasonSelect" id="reasonSelectLabel" class="poppins">Reason*</label>
+									<select class="bg-[#D9D9D9]/20 py-3 pr-9 block shadow-sm text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-gray-400 poppins regular w-full rounded-md">
+										<option selected>Pick an option</option>
 										<option value="message">Message</option>
 										<option value="bugReport">Bug Report</option>
 										<option value="advice">Advice</option>
 										<option value="cooperation">Business & Cooperation</option>
-								</select>
+									  </select>
+								</div>
 							</div>
 						</div>
 						<div id="messageInputContainer">
-							<label for="messageInput" id="messageInputLabel" class="poppins w-[100px] h-[30px]">Message</label>
-							<textarea name="messageInput" id="messageInput" cols="20" rows="4" class="poppins"></textarea>
+							<label for="messageInput" id="messageInputLabel" class="poppins mt-3">Message*</label>
+							<textarea placeholder="Dear AutoDTB team..." name="messageInput" id="messageInput" cols="45" rows="4" class="bg-[#D9D9D9]/20 poppins text-sm py-1 pr-9 block w-full pl-1 resize-none shadow-sm focus:border-blue-500 focus:ring-blue-500 rounded-md"></textarea>
+							
 						</div>
-						<div id="contactButtonContainer" class="row">
-							<div id="contactSubmitButtonContainer" class="col">
-								<button id="contactSubmitButton" class="poppins">Send</button>
+
+						<div class="row mt-3" id="contactButtonContainer">
+							<div class="col" id="contactAttachButtonContainer">
+								<button id="contactAttachButton" class="poppins button_primary h-[55px] w-[195px]"><span id="subscribeButtonText" class="poppins decoration-white text-sm">Send </span></button>
 							</div>
-							<div id="contactAttachButtonContainer" class="col">
-							<button id="contactAttachButton" class="poppins">Add Attachment <span class="">(optional)</span></button>
+							<div class="col" id="contactSubmitButtonContainer">
+								<button id="contactSubmitButton" class="poppins button_secondary h-[55px] w-[145px]"><span id="manageSubscriptionButtonText" class="poppins decoration-white text-xs text-center">Add Attachment <span class="">(optional)</span></button>
 							</div>
 						</div>
 					</form>
