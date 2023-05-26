@@ -10,6 +10,16 @@
 	}
 }
 
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.poppins{
+	font-family: 'Poppins', sans-serif;
+}
+
+
 :root {
 	--red: #CF4A4A;
 	--green: #85E16E;
